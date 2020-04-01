@@ -2,19 +2,24 @@
   "name": "ionic-react-nextjs-starter",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
+  "scripts": {    
+    "start:server": "tsc -p ./tsconfig.server.json && node ./dist-server/index.js",
+    "predev": "rm -rf ./dist-server",
+    "dev": "nodemon",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@ionic/react": "^5.0.7-nextjs-alpha.1",
     "@ionic/react-next-router": "^5.0.7-nextjs-alpha.1",
+    "express": "^4.17.1",
     "next": "^9.3.4",
+    "nodemon": "^2.0.2",
     "react": "16.13.0",
     "react-dom": "16.13.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.4",
     "@types/node": "^13.9.2",
     "@types/react": "^16.9.23",
     "typescript": "^3.8.3"

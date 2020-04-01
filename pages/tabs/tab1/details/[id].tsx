@@ -1,5 +1,5 @@
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonBackButton } from '@ionic/react';
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 
 const Details: React.FC = () => {
 
@@ -20,10 +20,8 @@ const Details: React.FC = () => {
           <IonToolbar>
             <IonTitle size="large"> Details {router.query.id}</IonTitle>
           </IonToolbar>
-        </IonHeader>
-       
+        </IonHeader>       
       </IonContent>
-
     </IonPage>
   );
 };

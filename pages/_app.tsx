@@ -26,7 +26,7 @@ import '../theme/variables.css';
 
 /* This controls if SSR is on or not. Enabling it works but with warnings at the moment */
 export default dynamic(() => Promise.resolve(MyApp), {
-  ssr: false
+  ssr: true
 });
 
 function MyApp({ Component, pageProps }) {
