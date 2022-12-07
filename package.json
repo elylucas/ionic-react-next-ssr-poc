@@ -12,7 +12,7 @@
   "dependencies": {
     "@ionic/react": "^5.0.7-nextjs-alpha.1",
     "@ionic/react-next-router": "^5.0.7-nextjs-alpha.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "next": "^9.3.4",
     "nodemon": "^2.0.2",
     "react": "16.13.0",
